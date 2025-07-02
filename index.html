@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3-2-1 Backup Rule Cheatsheet</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #121212;
+        color: #eee;
+      }
+      .card {
+        background: #1e1e1e;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      }
+      .rule {
+        color: #ff6666;
+      }
+      .caption {
+        color: #aaa;
+      }
+      footer {
+        color: #bbb;
+      }
+      .frame {
+        background: #2a2a2a;
+        box-shadow: inset 0 0 3px rgba(255,255,255,0.1);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    .rule {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #d32f2f;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .emoji {
+      font-size: 1.4rem;
+      margin-right: 0.4rem;
+    }
+
+    .card ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    .visual {
+      text-align: center;
+      font-size: 2rem;
+      margin: 0.8rem 0 0.4rem;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .comic {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin: 0.8rem 0;
+      flex-wrap: wrap;
+    }
+
+    .frame {
+      flex: 1;
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100px;
+      box-shadow: inset 0 0 3px rgba(0,0,0,0.08);
+      min-width: 90px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      color: #444;
+      padding-bottom: 2rem;
+    }
+
+    /* ✅ Responsive layout */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .comic {
+        flex-direction: column;
+      }
+      .frame {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+        width: 100%;
+      }
+      .card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 3-2-1 Backup Rule Cheatsheet</h1>
+  <p class="rule">Don't fuck up.</p>
+
+  <div class="container">
+    <div class="grid">
+
+      <!-- Rule Cards -->
+      <div class="card">
+        <h2><span class="emoji">3️⃣</span>3 COPIES</h2>
+        <ul>
+          <li>1 original</li>
+          <li>2 backups</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="emoji">2️⃣</span>2 TYPES OF MEDIA</h2>
+        <ul>
+          <li>Example: external drive + cloud</li>
+          <li>Don’t trust just one tech</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="emoji">1️⃣</span>1 OFF-SITE</h2>
+        <ul>
+          <li>One backup stored away</li>
+          <li>Fire? Theft? Still got it</li>
+        </ul>
+      </div>
+
+      <!-- Illustration Cards -->
+      <div class="card">
+        <h2><span class="emoji">3️⃣</span>3 COPIES</h2>
+        <div class="comic">
+          <div class="frame">📄🖥️<br>Original File</div>
+          <div class="frame">💾📂<br>Backup #1</div>
+          <div class="frame">☁️🔐<br>Backup #2</div>
+        </div>
+        <div class="caption">Always keep 2 extra copies besides the original.</div>
+      </div>
+
+      <div class="card">
+        <h2><span class="emoji">2️⃣</span>2 TYPES OF MEDIA</h2>
+        <div class="comic">
+          <div class="frame">💽🔌<br>External Drive</div>
+          <div class="frame">☁️📡<br>Cloud Backup</div>
+          <div class="frame">📼🧾<br>NAS or Tape</div>
+        </div>
+        <div class="caption">Use 2 different media: disk + cloud, USB + NAS, etc.</div>
+      </div>
+
+      <div class="card">
+        <h2><span class="emoji">1️⃣</span>1 OFF-SITE</h2>
+        <div class="comic">
+          <div class="frame">🏠💻<br>At Home</div>
+          <div class="frame">☁️🔐<br>Cloud Backup</div>
+          <div class="frame">📦🏢<br>Office or Storage</div>
+        </div>
+        <div class="caption">
+          Keep at least 1 copy far away:<br>
+          Cloud, office, storage — just not home.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    ✅ Golden Rule:<br>If you don’t follow 3-2-1, you WILL lose your data.<br/>
+    Not "if" — <strong>when</strong>.
+  </footer>
+
+</body>
+</html>
